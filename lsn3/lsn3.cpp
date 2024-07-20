@@ -1,0 +1,78 @@
+﻿#include <iostream>
+using namespace std;
+int main() {
+	cout << "task1" << endl;
+	double kq;
+	cout << "kq:" << endl;
+	cin >> kq;
+	double gal = kq * 0.26;
+	cout << "gallon:" << gal << endl;
+	cout << "task2" << endl;
+	int qiymet, boyuk, usaq;
+	cout << "biletin qiymeti:" << endl;
+	cin >> qiymet;
+	cout << "boyuklerin sayi:" << endl;
+	cin >> boyuk;
+	cout << "usaqlarin sayi:" << endl;
+	cin >> usaq;
+	int usaqb = qiymet * 60 / 100;
+	cout << "umumi xerclenecek mebleg:" << qiymet * boyuk + usaq * usaqb << endl;
+	cout << "task3" << endl;
+	double pul, illik_g;
+	cout << "banka qoyulacaq pul:" << endl;
+	cin >> pul;
+	cout << "İLLİK üzərinə gəlinəcək faiz:" << endl;
+	cin >> illik_g;
+	cout << "AYLIQ gələcək gəlir:" << pul * illik_g / 100 / 12 << endl;
+	cout << "task4" << endl;
+	double mesafe, a92, a95, premium;
+	cout << "mesafe:" << endl;
+	cin >> mesafe;
+	cout << "a92 qiymet:" << endl;
+	cin >> a92;
+	cout << "a95 qiymet:" << endl;
+	cin >> a95;
+	cout << "premium qiymet:" << endl;
+	cin >> premium;
+	cout << "a92:" << mesafe / 100 * a92 << endl;
+	cout << "a95:" << mesafe / 100 * a95 << endl;
+	cout << "premium:" << mesafe / 100 * premium << endl;
+	cout << "task5" << endl;
+	double en, uzunluq, hundurluk;
+	cout << "otagin eni:" << endl;
+	cin >> en;
+	cout << "otagin uzunlugu:" << endl;
+	cin >> uzunluq;
+	cout << "otagin hundurluyu:" << endl;
+	cin >> hundurluk;
+	double mkv = 0.5;
+	cout << "otagi boyamaq ucun ne qeder reng lazimdir: " << en * uzunluq * hundurluk * 80 / 100 * 0.5 << endl;
+	cout << "task6" << endl;
+	int eded;
+	cout << "3 reqemli eded:" << endl;
+	cin >> eded;
+	int yuzl = eded / 100 % 10;
+	int onl = eded / 10 % 10;
+	int tekl = eded % 10;
+	cout << yuzl << "," << onl << "," << tekl << endl;
+	cout << "task7" << endl;
+	int num;
+	cout << "3 reqemli eded:" << endl;
+	cin >> num;
+	int y = num / 100 % 10;
+	int o = num / 10 % 10;
+	int t = num % 10;
+	cout << t << o << y << endl;
+	cout << "task8" << endl;
+	int num1;
+	cout << "4 reqemli eded:" << endl;
+	cin >> num1;
+	int min = num1 / 1000 % 10;
+	int yuz = num1 / 100 % 10;
+	int on = num1 / 10 % 10;
+	int tek = num1 % 10;
+	cout << "1 ve 3 cu reqemin cemi:" << min + on << "\n2 ve 4 cu reqemin ferqi:" << yuz - tek << endl;
+
+
+
+}
